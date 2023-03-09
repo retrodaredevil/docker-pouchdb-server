@@ -1,5 +1,4 @@
-#FROM node:current-alpine3.12
-FROM node:18-alpine
+FROM node:18-bullseye-slim
 
 RUN npm install -g pouchdb-server@4.2.0
 
