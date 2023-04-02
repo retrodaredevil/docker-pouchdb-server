@@ -1,5 +1,6 @@
 FROM node:18-bullseye-slim
+ARG VERSION
 
-RUN npm install -g pouchdb-server@4.2.0
+RUN npm install -g pouchdb-server@${VERSION}
 
-ENTRYPOINT ["pouchdb-server", "--host", "0.0.0.0"]
+ENTRYPOINT ["pouchdb-server"]
